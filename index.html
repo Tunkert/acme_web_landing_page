@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="This is a bootstrap sass program">
+	<title>Bootstrap sass program</title>
+
+	<link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+	
+	<!-- start navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+		<div class="container">
+			<a class="navbar-brand text-secondary text-uppercase" href="#">Acme Web</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-uppercase" href="#">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-uppercase" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-uppercase" href="#">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-uppercase" href="#">Portfolio</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end navbar -->
+
+	<!-- hero section -->
+	<div id="primary" class="bg-secondary pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<h3 class="text-light text-uppercase">
+						Web Design.
+					</h3>
+					<p class="fs-3 text-uppercase text-light font-weight-bold">
+						Defined.
+					</p>
+					<p class="fs-4 text-uppercase text-light font-weight-bold">
+						Build your inner unicorn.
+					</p>
+					<p class="fs-5 text-uppercase text-light font-weight-bold">
+						Html<br>
+						Css<br>
+							<ul>
+								<li class="text-primary">Bootstrap</li>
+								<li class="text-primary">Tailwind</li>
+								<li class="text-primary">Bulma</li>
+								<li class="text-primary">Foundation</li>
+								<li class="text-primary">Sass</li>
+							</ul>
+					</p>
+					<p class="fs-5 text-uppercase text-light font-weight-bold">
+						Javascript<br>
+							<ul>
+								<li class="text-primary">React</li>
+								<li class="text-primary">Angular</li>
+								<li class="text-primary">Vue</li>
+								<li class="text-primary">Svelte</li>
+								<li class="text-primary">Typescript</li>
+							</ul>
+					</p>
+					<button class="btn btn-lg btn-primary text-light">Learn more</button>
+				</div>
+				<div class="col-lg-7">
+					<img class="mx-auto d-block w-75 mt-5" src="images/unicorn.svg" alt="unicorn">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- what you need section 1 -->
+	<div id="what-you-need-1" class="bg-light pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h3 class="text-secondary text-uppercase">
+						Maybe you need something simple?
+					</h3>
+					<p class="fs-3 text-secondary text-primary font-weight-bold">
+						Why build something complicated?
+					</p>
+					<p class="fs-5 text-secondary text-primary font-weight-bold">
+						If you need something simple with only your email and phone number, why build something overly complex.
+					</p>
+					<p class="text-secondary font-weight-bold">
+						You don't need WordPress. You don't need Typescript. You don't need Nodejs. We'll only give you what you need.</p>
+				</div>
+				<div class="col-lg-8 pt-5">
+					<img class="mx-auto d-block w-75" src="images/static_website.svg" alt="static websites">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end what you need section 2 -->
+
+	<!-- what you need section 2 -->
+	<div id="what-you-need-section-2" class="bg-secondary pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h3 class="text-light text-uppercase">
+						Maybe you need something more complex?
+					</h3>
+					<p class="fs-5 text-light text-uppercase font-weight-bold">
+						Need a blog? Advanced Functionality?	
+					</p>
+					<p class="fs-6 text-light font-weight-bold">
+						WordPress. Node JS. React. Angular. Vue. Svelte. We've got you covered, whatever you need!
+					</p>
+				</div>
+				<div class="col-lg-8">
+					<img class="mx-auto d-block w-75" src="./images/wordpress.svg" alt="WordPress">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- begin contact us -->
+	<div id="contact" class="bg-primary">
+		<div class="container pt-5 pb-5">
+			<div class="row">
+				<div class="col-lg-4 offset-lg-4">
+					<h3 class="text-center text-light">Contact Us</h3>
+					<form action="" method="post">
+						<div class="form-group text-light">
+							<label for="full-name" class="mt-2 mb-2">Name: </label>
+							<input class="form-control" id="full-name" name="full-name" type="text" required>
+						</div>
+						<div class="form-group text-light">
+							<label for="email" class="mt-2 mb-2">Email: </label>
+							<input class="form-control" id="email" name="email" type="email" required>
+						</div>
+						<div class="form-group text-light">
+							<label for="message" class="mt-2 mb-2">Leave a message:</label>
+							<textarea id="message" class="form-control" name="message" cols="30" rows="10"></textarea>
+						</div>
+						<button class="btn btn-lg btn-secondary mt-3 text-light" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contact form -->
+
+	<!-- begin footer -->
+	<div id="footer" class="bg-secondary pt-5 pb-4">
+		<div class="container">
+			<p class="text-center text-light" style="font-size: 0.8rem;">
+				Copyright &copy; 2021 Acme Web. All rights reserved.
+			</p>
+		</div>
+	</div>
+	<!-- end footer -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>	
+</body>
+</html>
